@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    android:fadingEdgeLength="12dp"
+    tools:context=".Dashboard">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:subtitleTextColor="#000000"
+        app:titleTextColor="#000000" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/h2d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/h2dt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hexadecimal to Decimal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/h2o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/h2ot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hexadecimal to Octal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/h2b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/h2bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hexadecimal to Binary"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/d2h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/d2ht"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Decimal to Hexadecimal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/d2b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/d2bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Decimal to Binary"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/d2o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/d2ot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Decimal to Octal "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/b2d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/b2dt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Binary to Decimal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/b2h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/b2ht"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Binary to Hexadecimal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/b2o"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/b2ot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Binary to Octal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/o2d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/o2dt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Octal to Decimal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/o2b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/o2bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Octal to Binary"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/o2h"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="20sp"
+                    android:backgroundTint="#9575CD"
+                    android:hapticFeedbackEnabled="true"
+                    android:textAlignment="center"
+                    android:touchscreenBlocksFocus="true"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="24dp">
+
+                    <TextView
+                        android:id="@+id/o2ht"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Octal to Hexadecimal"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
